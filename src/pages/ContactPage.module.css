@@ -12,6 +12,19 @@
   align-items: end;
 }
 
+.introduction {
+  position: relative;
+}
+
+.portrait {
+  width: clamp(5.5rem, 9vw, 7.5rem);
+  aspect-ratio: 1;
+  margin-bottom: 2rem;
+  border-radius: 50%;
+  object-fit: cover;
+  filter: saturate(0.85);
+}
+
 .contactOptions {
   border-top: 1px solid var(--line);
 }

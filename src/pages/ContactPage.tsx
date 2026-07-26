@@ -1,10 +1,16 @@
+import aliciaPortrait from '../assets/alicia-hunt-linkedin.jpg'
 import styles from './ContactPage.module.css'
 
 export function ContactPage() {
   return (
     <section className={styles.contactPage}>
       <div className={`page-width ${styles.inner}`}>
-        <div>
+        <div className={styles.introduction}>
+          <img
+            className={styles.portrait}
+            src={aliciaPortrait}
+            alt="Alicia Hunt"
+          />
           <p className="eyebrow">Contact</p>
           <h1 className="display-title">Let’s start a conversation.</h1>
           <p className="section-copy">
@@ -13,10 +19,14 @@ export function ContactPage() {
           </p>
         </div>
         <div className={styles.contactOptions}>
-          <a href="mailto:aliciahunt229@gmail.com">
+          <a
+            href="https://mail.google.com/mail/u/0/#inbox"
+            rel="noreferrer"
+            target="_blank"
+          >
             <span>Email</span>
             <strong>aliciahunt229@gmail.com</strong>
-            <small>Open a new email ↗</small>
+            <small>Go to your inbox ↗</small>
           </a>
           <a href="https://www.linkedin.com/in/alicia-hunt-4394a6163/" rel="noreferrer" target="_blank">
             <span>LinkedIn</span>
