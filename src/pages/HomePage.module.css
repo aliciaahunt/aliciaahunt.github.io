@@ -1,0 +1,288 @@
+.hero {
+  display: grid;
+  min-height: min(780px, calc(100vh - 85px));
+  align-items: center;
+  padding: clamp(5rem, 12vw, 10rem) 0 5rem;
+  border-bottom: 1px solid var(--line);
+  background: linear-gradient(90deg, transparent 49.9%, rgba(0, 33, 71, 0.07) 50%, transparent 50.1%), var(--paper);
+}
+
+.heroFooter {
+  display: grid;
+  max-width: 920px;
+  grid-template-columns: minmax(0, 1.8fr) minmax(160px, 0.7fr);
+  gap: 3rem;
+  align-items: end;
+}
+
+.heroFooter p {
+  margin: 0;
+  color: var(--muted);
+  font-size: clamp(1.1rem, 2vw, 1.38rem);
+  line-height: 1.7;
+}
+
+.about,
+.education,
+.experience,
+.projects,
+.skills {
+  padding: var(--section-space) 0;
+}
+
+.about {
+  background: var(--white);
+}
+
+.aboutGrid {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 3rem;
+}
+
+.statement {
+  max-width: 900px;
+  margin-bottom: 2rem;
+  color: var(--oxford-blue);
+  font-family: var(--serif);
+  font-size: clamp(2.5rem, 5.6vw, 5.4rem);
+  font-weight: 400;
+  letter-spacing: -0.045em;
+  line-height: 1.03;
+}
+
+.education {
+  background: var(--oxford-blue);
+  color: var(--white);
+}
+
+.education :global(.section-title) {
+  color: var(--white);
+}
+
+.educationGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  margin-top: 4rem;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.educationGrid article {
+  min-height: 300px;
+  padding: clamp(1.75rem, 4vw, 3.5rem);
+  background: var(--oxford-blue);
+}
+
+.educationGrid h3 {
+  margin: 3.5rem 0 0.75rem;
+  font-family: var(--serif);
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
+  font-weight: 400;
+}
+
+.educationGrid article > p:not(.year) {
+  margin-bottom: 0.75rem;
+  color: #e3e8ed;
+  font-size: 1.08rem;
+}
+
+.educationGrid span {
+  color: #aebbc8;
+  font-size: 0.9rem;
+}
+
+.year {
+  color: var(--gold);
+  font-size: 0.78rem;
+  font-weight: 750;
+  letter-spacing: 0.13em;
+}
+
+.experience {
+  background: var(--white);
+}
+
+.timeline,
+.projectList {
+  margin-top: 5rem;
+  border-top: 1px solid var(--line);
+}
+
+.role,
+.project {
+  display: grid;
+  gap: clamp(1.5rem, 4vw, 4rem);
+  padding: 2.5rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.role {
+  grid-template-columns: 0.8fr 1.2fr 1.6fr;
+}
+
+.roleDates,
+.roleName,
+.roleSummary {
+  margin: 0;
+}
+
+.roleDates,
+.roleName {
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.role h3 {
+  margin-bottom: 0.45rem;
+  color: var(--oxford-blue);
+  font-family: var(--serif);
+  font-size: 1.35rem;
+  font-weight: 400;
+}
+
+.roleSummary,
+.project div > p {
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.projects {
+  background: var(--paper-deep);
+}
+
+.project {
+  grid-template-columns: 0.25fr 1fr 1.5fr;
+}
+
+.projectNumber {
+  color: var(--gold);
+  font-family: var(--serif);
+}
+
+.project h3 {
+  color: var(--oxford-blue);
+  font-family: var(--serif);
+  font-size: clamp(1.45rem, 2.6vw, 2.2rem);
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.project span {
+  color: var(--oxford-blue-soft);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.skills {
+  background: var(--white);
+}
+
+.skillList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 4rem 0 0;
+  padding: 0;
+  border-top: 1px solid var(--line);
+  list-style: none;
+}
+
+.skillList li {
+  padding: 1.35rem 0;
+  border-bottom: 1px solid var(--line);
+  color: var(--oxford-blue);
+  font-size: clamp(1rem, 2vw, 1.2rem);
+}
+
+.skillList li:nth-child(odd) {
+  padding-right: 2rem;
+}
+
+.skillList li:nth-child(even) {
+  padding-left: 2rem;
+  border-left: 1px solid var(--line);
+}
+
+.contactCta {
+  padding: 6rem 0;
+  background: var(--gold);
+}
+
+.ctaInner {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 3rem;
+}
+
+.contactCta :global(.eyebrow) {
+  color: var(--oxford-blue);
+}
+
+.contactCta h2 {
+  max-width: 750px;
+  margin: 0;
+  color: var(--oxford-blue);
+  font-family: var(--serif);
+  font-size: clamp(2.5rem, 6vw, 5.5rem);
+  font-weight: 400;
+  letter-spacing: -0.045em;
+  line-height: 1;
+}
+
+.contactCta a {
+  flex: 0 0 auto;
+  padding: 1rem 1.3rem;
+  border: 1px solid var(--oxford-blue);
+  color: var(--oxford-blue);
+  font-weight: 750;
+  text-decoration: none;
+}
+
+.contactCta a span {
+  margin-left: 1rem;
+}
+
+@media (max-width: 760px) {
+  .heroFooter,
+  .aboutGrid,
+  .educationGrid,
+  .role,
+  .project {
+    grid-template-columns: 1fr;
+  }
+
+  .heroFooter,
+  .role,
+  .project {
+    gap: 1rem;
+  }
+
+  .educationGrid article {
+    min-height: 250px;
+  }
+
+  .roleSummary,
+  .project div {
+    margin-top: 1rem;
+  }
+
+  .ctaInner {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 540px) {
+  .skillList {
+    grid-template-columns: 1fr;
+  }
+
+  .skillList li:nth-child(odd),
+  .skillList li:nth-child(even) {
+    padding-inline: 0;
+    border-left: 0;
+  }
+}

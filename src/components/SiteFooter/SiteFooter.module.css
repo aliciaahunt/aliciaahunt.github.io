@@ -1,0 +1,42 @@
+.footer {
+  padding: 3rem 0;
+  background: var(--oxford-blue);
+  color: var(--white);
+}
+
+.inner {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.name {
+  margin-bottom: 0.45rem;
+  font-family: var(--serif);
+  font-size: 1.45rem;
+}
+
+.note {
+  margin: 0;
+  color: #c7d0da;
+  font-size: 0.88rem;
+}
+
+.links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.links a {
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-underline-offset: 0.3rem;
+}
+
+@media (max-width: 620px) {
+  .inner {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
